@@ -4,6 +4,8 @@ This code primarily revolves around optimising the training process of a GPT-2 m
 
 The project explores various optimisation strategies documented within the `gpt-2-optimisation.ipynb` notebook. A separate notebook, `gpt-2-from-scratch.ipynb`, details the initial implementation based on the GPT-2 small architecture.
 
+![Demo of generation](/notebooks/images/demo-of-generation.gif)
+
 ## Key Features & Optimisations Implemented
 
 - **Mixed Precision:** Utilises `torch.set_float32_matmul_precision('high')` for TF32 on compatible hardware and `torch.autocast` (with BFloat16 or Float16) for model forward pass and loss calculations to reduce memory usage and leverage Tensor Cores.
